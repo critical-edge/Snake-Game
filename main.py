@@ -1,7 +1,7 @@
 from turtle import Turtle,Screen
 import time
 from snake import Snake
-
+from food import Food
 
 
 # def create_segment(n):
@@ -25,7 +25,7 @@ screen.setup(600,600)
 screen.title("The snake game".title())
 screen.tracer(0)
 
-
+food = Food()
 snake = Snake()
 snake.create_segment(3)
 snake.segment_positioner()
